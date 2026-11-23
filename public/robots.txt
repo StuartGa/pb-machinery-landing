@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stuartga.github.io/pb-machinery-landing/sitemap.xml

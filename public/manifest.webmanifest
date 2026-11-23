@@ -1,0 +1,17 @@
+{
+  "name": "PB Machinery",
+  "short_name": "PB Machinery",
+  "description": "Maquinaria especializada para pastelería y panadería",
+  "start_url": "/pb-machinery-landing/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0A1F3D",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "/pb-machinery-landing/images/logo-icon.webp",
+      "sizes": "64x64",
+      "type": "image/webp"
+    }
+  ]
+}

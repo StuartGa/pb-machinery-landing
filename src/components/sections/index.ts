@@ -1,0 +1,7 @@
+export { HeroSection } from './HeroSection'
+export { IndustriesSection } from './IndustriesSection'
+export { EvolveSection } from './EvolveSection'
+export { PastrySection } from './PastrySection'
+export { BakerySection } from './BakerySection'
+export { ProcessSection } from './ProcessSection'
+export { CtaSection } from './CtaSection'
