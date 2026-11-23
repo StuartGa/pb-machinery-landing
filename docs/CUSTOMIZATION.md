@@ -135,7 +135,7 @@ Ver también [SEO.md](SEO.md).
 
 ```
 github.com/tu-org/acme-landing     ← fork o repo nuevo desde plantilla
-github.com/tu-org/conciron-landing   ← cliente existente (referencia)
+github.com/tu-org/pb-machinery-landing   ← cliente existente (referencia)
 github.com/tu-org/landing-template   ← plantilla maestra (este repo)
 ```
 

@@ -1,4 +1,4 @@
-# SEO y optimización — Conciron Landing
+# SEO y optimización — PB Machinery Landing
 
 Guía de las optimizaciones aplicadas para alcanzar **100 % en Lighthouse SEO** y mejorar rendimiento/estabilidad.
 
@@ -56,7 +56,7 @@ Abre Chrome DevTools → Lighthouse → modo **Navigation** → categorías SEO,
 
 ## Producción
 
-URL canónica: **https://stuartga.github.io/conciron-landing/**
+URL canónica: **https://stuartga.github.io/pb-machinery-landing/**
 
 Tras cada deploy, verifica en [Google Rich Results Test](https://search.google.com/test/rich-results) que el JSON-LD sea válido.
 

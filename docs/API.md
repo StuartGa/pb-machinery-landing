@@ -1,6 +1,6 @@
 # API — Documentación de funciones
 
-Índice de funciones exportadas en la landing page Conciron. Cada entrada enlaza al módulo fuente.
+Índice de funciones exportadas en la landing page PB Machinery. Cada entrada enlaza al módulo fuente.
 
 ## Utilidades (`src/lib/`)
 

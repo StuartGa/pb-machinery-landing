@@ -1,4 +1,5 @@
 import { Component, type ErrorInfo, type ReactNode } from 'react'
+import { siteConfig } from '@/config/site'
 
 interface ErrorBoundaryProps {
   children: ReactNode
@@ -19,7 +20,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error('[Conciron] Render error:', error, info.componentStack)
+    console.error(`[${siteConfig.name}] Render error:`, error, info.componentStack)
   }
 
   render() {
@@ -32,10 +33,10 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
               No pudimos cargar la página. Por favor recarga o contáctanos directamente.
             </p>
             <a
-              href="mailto:cotizaciones@conciron.com.mx"
+              href={`mailto:${siteConfig.email}`}
               className="inline-block bg-primary text-white px-6 py-3 font-semibold"
             >
-              cotizaciones@conciron.com.mx
+              {siteConfig.email}
             </a>
           </div>
         </div>
