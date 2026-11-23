@@ -68,17 +68,33 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-bold uppercase tracking-wide text-white transition;
-    background-image: linear-gradient(180deg, #2a7ef0 0%, #1b6fe8 55%, #1557c0 100%);
-    box-shadow: 0 10px 24px -12px rgba(27, 111, 232, 0.65);
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-bold uppercase tracking-wide text-white transition;
+    background-color: #1b6fe8;
+    box-shadow: none;
   }
 
   .btn-primary:hover {
-    filter: brightness(1.05);
-    transform: translateY(-1px);
+    background-color: #1557c0;
   }
 
   .btn-primary:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* Header CTA — matches PDF: compact rectangle, soft corners, solid blue */
+  .btn-header {
+    @apply inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-[11px] font-extrabold uppercase tracking-[0.04em] text-white transition xl:px-5 xl:text-xs;
+    background-color: #1b6fe8;
+    line-height: 1.15;
+    box-shadow: none;
+  }
+
+  .btn-header:hover {
+    background-color: #1557c0;
+  }
+
+  .btn-header:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
   }

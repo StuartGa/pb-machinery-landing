@@ -70,7 +70,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href={siteContent.headerCta.href} className="btn-primary hidden sm:inline-flex">
+          <a href={siteContent.headerCta.href} className="btn-header hidden sm:inline-flex">
             {siteContent.headerCta.label}
           </a>
           <button
@@ -113,7 +113,7 @@ export function Header() {
             )}
             <a
               href={siteContent.headerCta.href}
-              className="btn-primary mt-2"
+              className="btn-header mt-2"
               onClick={() => setOpen(false)}
             >
               {siteContent.headerCta.label}
