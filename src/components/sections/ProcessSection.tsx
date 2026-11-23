@@ -22,38 +22,38 @@ export function ProcessSection() {
   const { ref, visible } = useScrollReveal<HTMLElement>()
 
   return (
-    <section className="bg-white py-16 md:py-20" ref={ref}>
+    <section className="bg-white py-12 md:py-16" ref={ref}>
       <Container
         className={cn(
-          'grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-start',
+          'grid gap-8 lg:grid-cols-[0.65fr_1.35fr] lg:items-start',
           'scroll-reveal',
           visible && 'scroll-reveal--visible',
         )}
       >
-        <div className="max-w-sm">
-          <h2 className="text-3xl font-extrabold text-navy md:text-4xl">{process.title}</h2>
-          <p className="mt-2 text-on-surface-muted">{process.subtitle}</p>
+        <div className="max-w-xs">
+          <h2 className="text-2xl font-extrabold text-navy md:text-3xl">{process.title}</h2>
+          <p className="mt-2 text-sm text-on-surface-muted">{process.subtitle}</p>
         </div>
 
-        <ol className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
           {process.steps.map((step, index) => {
             const Icon = icons[step.icon]
             return (
               <li key={step.id} className="relative">
                 {index < process.steps.length - 1 && (
                   <IconArrow
-                    className="absolute -right-3 top-6 hidden h-4 w-4 text-primary lg:block"
+                    className="absolute -right-2 top-5 hidden h-3.5 w-3.5 text-primary lg:block"
                     aria-hidden
                   />
                 )}
-                <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full border border-primary/30 text-primary">
-                  <Icon className="h-5 w-5" />
+                <div className="mb-3 flex items-center gap-2">
+                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-white">
+                    {step.step}
+                  </span>
+                  <Icon className="h-5 w-5 text-primary" />
                 </div>
-                <p className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-white">
-                  {step.step}
-                </p>
-                <h3 className="mt-3 text-base font-extrabold text-navy">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-on-surface-muted">
+                <h3 className="text-sm font-extrabold text-navy md:text-base">{step.title}</h3>
+                <p className="mt-1.5 text-xs leading-relaxed text-on-surface-muted md:text-sm">
                   {step.description}
                 </p>
               </li>
