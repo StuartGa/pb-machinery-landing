@@ -23,17 +23,18 @@ export function HeroSection() {
       />
       <div className="hero-overlay absolute inset-0" aria-hidden />
 
-      <Container className="relative grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12 lg:py-20">
+      <Container className="relative grid gap-8 py-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-10 lg:py-16">
         <div className="text-white">
-          <p className="text-label-caps text-white/85">{hero.eyebrow}</p>
-          <h1 className="mt-4 max-w-xl text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl">
+          <p className="text-label-caps text-white/90">{hero.eyebrow}</p>
+          <h1 className="mt-4 max-w-xl text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-[3.25rem]">
             <span className="relative inline-block">
-              Lleva
-              <span className="absolute -bottom-1 left-0 h-1 w-14 rounded-full bg-primary" />
+              Lleva tu
+              <span className="absolute -bottom-1 left-0 h-[5px] w-[4.5rem] rounded-sm bg-primary" />
             </span>{' '}
-            tu producción al siguiente nivel.
+            producción
+            <br className="hidden sm:block" /> al siguiente nivel.
           </h1>
-          <p className="mt-5 max-w-lg text-base leading-relaxed text-white/88 sm:text-lg">
+          <p className="mt-5 max-w-lg text-base leading-relaxed text-white/90 sm:text-lg">
             {hero.description}
           </p>
 
@@ -41,30 +42,30 @@ export function HeroSection() {
             <PublicImage
               src={hero.productImage}
               alt={hero.productImageAlt}
-              className="w-full rounded-2xl object-cover shadow-[0_30px_60px_-28px_rgba(0,0,0,0.55)]"
+              className="w-full object-contain drop-shadow-[0_28px_50px_rgba(0,0,0,0.55)]"
               width={640}
-              height={480}
+              height={720}
               loading="eager"
               fetchPriority="high"
             />
           </div>
 
-          <ul className="mt-8 grid gap-4 sm:grid-cols-3">
+          <ul className="mt-8 grid gap-0 sm:grid-cols-3 sm:divide-x sm:divide-white/25">
             {hero.trust.map((item) => {
               const Icon = trustIcons[item.icon]
               return (
-                <li key={item.id} className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-accent">
-                    <Icon className="h-4 w-4" />
+                <li key={item.id} className="flex items-start gap-3 py-2 sm:px-4 sm:first:pl-0 sm:last:pr-0">
+                  <span className="mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center text-white">
+                    <Icon className="h-5 w-5" />
                   </span>
-                  <span className="text-xs font-medium leading-snug text-white/90">{item.label}</span>
+                  <span className="text-xs font-semibold leading-snug text-white/95">{item.label}</span>
                 </li>
               )
             })}
           </ul>
         </div>
 
-        <QuoteForm className="lg:justify-self-end lg:w-full lg:max-w-md" />
+        <QuoteForm className="lg:sticky lg:top-24 lg:justify-self-end lg:w-full lg:max-w-md" />
       </Container>
     </section>
   )

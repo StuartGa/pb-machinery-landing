@@ -29,13 +29,13 @@ export function Header() {
           />
         </a>
 
-        <nav className="hidden items-center gap-6 lg:flex" aria-label="Principal">
+        <nav className="hidden items-center gap-4 xl:gap-6 lg:flex" aria-label="Principal">
           {siteContent.navigation.map((item) =>
             item.children ? (
               <div key={item.label} className="relative">
                 <button
                   type="button"
-                  className="inline-flex items-center gap-1 text-sm font-semibold text-on-surface hover:text-primary"
+                  className="inline-flex items-center gap-1 whitespace-nowrap text-[13px] font-semibold text-on-surface hover:text-primary xl:text-sm"
                   aria-expanded={solutionsOpen}
                   onClick={() => setSolutionsOpen((v) => !v)}
                   onBlur={() => setTimeout(() => setSolutionsOpen(false), 150)}
@@ -61,7 +61,7 @@ export function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-semibold text-on-surface hover:text-primary"
+                className="whitespace-nowrap text-[13px] font-semibold text-on-surface hover:text-primary xl:text-sm"
               >
                 {item.label}
               </a>

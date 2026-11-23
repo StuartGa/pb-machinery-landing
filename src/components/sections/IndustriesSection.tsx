@@ -40,19 +40,19 @@ export function IndustriesSection() {
               <a
                 key={item.id}
                 href={item.href}
-                className="card-surface group overflow-hidden transition hover:-translate-y-1"
+                className="card-surface group flex h-full flex-col overflow-hidden transition hover:-translate-y-1"
               >
                 <PublicImage
                   src={item.image}
                   alt={item.imageAlt}
-                  className="h-40 w-full object-cover"
+                  className="aspect-[4/3] h-auto w-full object-cover"
                   width={640}
-                  height={320}
+                  height={480}
                 />
-                <div className="p-5">
+                <div className="flex flex-1 flex-col p-5">
                   <Icon className="mb-3 h-7 w-7 text-primary" />
                   <h3 className="text-lg font-extrabold text-navy">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-on-surface-muted">
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-on-surface-muted">
                     {item.description}
                   </p>
                   <span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-primary">

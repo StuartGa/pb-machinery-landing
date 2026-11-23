@@ -35,7 +35,7 @@ export const siteContent: SiteContent = {
       'Soluciones de maquinaria para pastelerías, galleterías y panaderías artesanales que buscan mayor capacidad, consistencia y control en sus procesos.',
     background: '/images/hero-bg.webp',
     productImage: '/images/hero-cake.webp',
-    productImageAlt: 'Pastel de fresa listo para producción industrial',
+    productImageAlt: 'Pastel de fresa con crema — producción de pastelería',
     trust: [
       {
         id: 'years',
@@ -286,7 +286,7 @@ export const siteContent: SiteContent = {
             id: 'silex-2',
             name: 'SILEX 2',
             capacity: 'Hasta 2,000 piezas/h',
-            image: '/images/machine-press.webp',
+            image: '/images/silex-2.webp',
           },
         ],
       },

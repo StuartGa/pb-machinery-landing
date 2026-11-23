@@ -12,7 +12,7 @@ export function CtaSection() {
   return (
     <section className="relative overflow-hidden" ref={ref}>
       <div
-        className="absolute inset-0 bg-cover bg-left"
+        className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${assetUrl(cta.background)})` }}
         aria-hidden
       />
@@ -20,7 +20,7 @@ export function CtaSection() {
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(90deg, rgba(5,22,46,0.35) 0%, rgba(5,22,46,0.82) 42%, rgba(5,22,46,0.95) 100%)',
+            'linear-gradient(90deg, rgba(5,22,46,0.55) 0%, rgba(5,22,46,0.78) 45%, rgba(5,22,46,0.92) 100%)',
         }}
         aria-hidden
       />
