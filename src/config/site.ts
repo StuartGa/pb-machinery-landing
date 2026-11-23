@@ -26,7 +26,6 @@ export const siteConfig = {
   website: 'https://www.pbmachineryusa.com',
   address: 'Kingwood, TX 77345, USA',
   country: 'US',
-  basePath: '/pb-machinery-landing/',
   requiredNavAnchors: [
     '#inicio',
     '#pasteleria',

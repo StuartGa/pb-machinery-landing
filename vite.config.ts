@@ -4,8 +4,12 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
+// Default `/` for Cursor publish / root hosts.
+// GitHub Pages sets VITE_BASE_PATH=/pb-machinery-landing/ in CI.
+const base = process.env.VITE_BASE_PATH || '/'
+
 export default defineConfig({
-  base: '/pb-machinery-landing/',
+  base,
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-App local en `http://127.0.0.1:4317/pb-machinery-landing/`.
+App local en `http://127.0.0.1:4317/`. Para GitHub Pages, el build de CI usa `VITE_BASE_PATH=/pb-machinery-landing/`.
 
 ## Scripts
 

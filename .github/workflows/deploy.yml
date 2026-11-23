@@ -34,6 +34,8 @@ jobs:
         run: npm run test
 
       - name: Build
+        env:
+          VITE_BASE_PATH: /pb-machinery-landing/
         run: npm run build
 
       - name: Upload artifact
